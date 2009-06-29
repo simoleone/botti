@@ -1,0 +1,11 @@
+# sample configuration file
+#
+$botJID = "simo@jabber.org/Bot"
+$password = "supersecret"
+
+$botName="InternBOT"
+$roomJID = "interns@conference.jabber.org/" + $botName
+
+$PLUGINS = {'rot13'=>nil, 'weather'=>nil, 'raplite'=>nil}
+
+# vim: ft=ruby
