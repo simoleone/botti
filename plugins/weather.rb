@@ -4,7 +4,7 @@ require 'rubygems'
 require 'yahoo-weather'
 
 module BotPlugin
-  class Rot13Plugin < BotPluginBase
+  class WeatherPlugin < BotPluginBase
     def initialize(muc)
       super(muc)
     end
