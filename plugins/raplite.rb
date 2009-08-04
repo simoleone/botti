@@ -1,10 +1,10 @@
 require 'bot_plugin_base'
-require '/tc/svn/admin/trunk/include/raplite/lib/prolite'
+require '/home/simo/rapleaf/path/mnt/tc/svn/admin/trunk/include/raplite/lib/prolite'
 
 module BotPlugin
   class RaplitePlugin < BotPluginBase
-    def initialize(muc)
-      super(muc)
+    def initialize(muc, plugins)
+      super(muc, plugins)
     end
 
     def process(time, nick, command)
@@ -18,6 +18,18 @@ module BotPlugin
 
       return true
     end
+
+    def help_list(time, nick)
+      return "raplite <message>"
+    end
+
+    def help(time, nick, command)
+      return false unless command =~ /^raplite$/
+
+      @muc.say("#{nick}: raplite <message>\nSets the raplite message")
+      return true
+    end
+
   end
 end
 
