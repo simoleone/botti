@@ -3,8 +3,8 @@
 $botJID = "simo@jabber.org/Bot"
 $password = "supersecret"
 
-$botName="InternBOT"
-$roomJID = "interns@conference.jabber.org/" + $botName
+$botName="Anna"
+$roomJID = "somewhere@conference.jabber.org/" + $botName
 
 $PLUGINS = ['hackme', 'help', 'retort', 'rot13', 'weather']
 
