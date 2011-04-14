@@ -9,7 +9,7 @@ module BotPlugin
     def process(time, nick, command)
       return false unless (command =~ /^hackme/)
 
-      @muc.say("#{nick}: git clone svn.vpn.rapleaf.com:/home/simo/gitrepos/internbot.git")
+      @muc.say("#{nick}: git clone git://github.com/simoleone/botti.git")
 
       return true
     end

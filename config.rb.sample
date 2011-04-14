@@ -6,6 +6,6 @@ $password = "supersecret"
 $botName="InternBOT"
 $roomJID = "interns@conference.jabber.org/" + $botName
 
-$PLUGINS = ['collectorstatus', 'hackme', 'help', 'raplite', 'retort', 'rot13', 'weather']
+$PLUGINS = ['hackme', 'help', 'retort', 'rot13', 'weather']
 
 # vim: ft=ruby
