@@ -5,8 +5,8 @@ require 'yahoo-weather'
 
 module BotPlugin
   class WeatherPlugin < BotPluginBase
-    def initialize(muc)
-      super(muc)
+    def initialize(muc, plugins)
+      super(muc, plugins)
     end
 
     def process(time, nick, command)
@@ -27,6 +27,18 @@ module BotPlugin
 
       return true
     end
+
+    def help_list(time, nick)
+      return "weather [zip=94105]"
+    end
+
+    def help(time, nick, command)
+      return false unless (command =~ /^weather$/)
+
+      @muc.say("#{nick}: weather [zip=94105]\nGives current conditions for zip.")
+      return true
+    end
+
   end
 end
 

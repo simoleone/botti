@@ -23,7 +23,7 @@ $PLUGINS.each { |m|
 BotPlugin.constants.each { |m|
   mod = BotPlugin.const_get(m)
   if (mod < BotPluginBase)
-    $LOADED_PLUGINS << mod.new(muc)
+    $LOADED_PLUGINS << mod.new(muc, $LOADED_PLUGINS)
   end
 }
 
